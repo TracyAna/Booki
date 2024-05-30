@@ -43,10 +43,10 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 0.20rem 0.90rem rgba(0, 0, 0, 0.1));
 }
 
-.card-img {
+.card img {
     object-fit: cover;
 }
 
@@ -273,40 +273,45 @@ header img {
 }
 
 /****** accomodations ***********/
-.accomodations {
-    display: flex;
-    flex-direction: column;
-    gap: 1.87rem;
-    width: 65%;
-}
 
 /* Bon courage Tracy :) */
-
-.accomodations-cards {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.section-title {
+    padding-bottom: 0.5rem;
 }
 
 .accomodations {
     width: 65%;
+}
+
+.accomodations-cards {
+    flex: 1 1 0px;
     display: flex;
+    
     flex-wrap: wrap;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    gap: 2rem;
+}
+
+.accomodations-cards a {
+    flex-grow: 1;
+    flex-basis: calc(30% - 4rem);
 }
 
 
 .accomodations img {
     height: 8rem;
     width: 100%;
-    border: 0.31rem solid #FFF;
+    border: 0rem solid #FFF;
     border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .accomodations-title {
     font-size: 7rem;
+}
+
+.accomodations-title2 {
+   
 
 }
 
@@ -356,9 +361,21 @@ header img {
 }
 
 /****** activities ******/
+.activities {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.activities-title {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+
 .activities-parts {
     display: flex;
     flex-wrap: nowrap;
+    gap: 1.87rem;
+
 
 }
 
@@ -371,11 +388,17 @@ header img {
 .activities img {
     height: 24rem;
     width: 100%;
-    border-radius: 1.25rem 1.25rem 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
+.activities .card {
+    padding: 0;
+}
+
+
 .activities h3 {
-    height: 3.68rem;
+    height: 40px;
 }
 
 .activities .card-link {
@@ -387,7 +410,7 @@ header img {
 footer {
     display: flex;
     background-color: var(--main-bg-color);
-    margin: 3rem 4em 0 4rem;
+    margin: 3rem 0rem 0 0rem;
 }
 
 footer section {
@@ -395,12 +418,10 @@ footer section {
     display: flex;
     flex-direction: column;
     width: calc(100% / 3);
-    gap: 0.93rem;
 }
 
 .footer-title {
-    font-size: 1.5em;
-    padding-left: 0em;
+    font-size: 1.10em;
 }
 
 footer ul {
@@ -418,8 +439,20 @@ footer ul {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+
+    /****** header ***********/
+    header {
+        width: 100%;
+    }
+
+    /****** filters ***********/
+
+    /****** accomodations ***********/
+
+    .accomodations-and-popular {
+        display: flex;
         flex-direction: column;
+        gap: 4rem;
     }
 
     .hebergements {
