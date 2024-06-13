@@ -58,6 +58,11 @@ a {
     font-weight: 700;
 }
 
+.card-rating {
+    gap: 0.1rem;
+
+}
+
 .neutral-star {
     color: var(--main-bg-color)
 }
@@ -89,16 +94,16 @@ input {
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-
-
+.subtitle {
+    
+}
 
 /****** navigation bar ******/
 header img {
     width: 80px;
-    height: 1.rem;
     margin: 1.87rem 0.2rem;
 }
 
@@ -115,7 +120,7 @@ header img {
 }
 
 .navbar-item {
-    height: 2rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     border-top: 0.2rem solid #FFF;
@@ -132,6 +137,8 @@ header img {
 
 /****** headline ******/
 .headline {
+    display: flex;
+    flex-direction: column;
     padding-top: 0.2rem;
     padding-bottom: 2rem;
 }
@@ -156,14 +163,11 @@ header img {
     text-align: center;
     border-top: 0.12rem solid var(--main-bg-color);
     border-bottom: 0.12rem solid var(--main-bg-color);
-}
-
-.search-bar input::placeholder {
-    width: 100%;
     font-weight: 700;
-    font-size: larger;
+    font-size: 1.2rem;
     color: black;
 }
+
 
 .search-bar i:first-child {
     display: flex;
@@ -190,6 +194,7 @@ header img {
 .search-bar-txt {
     color: white;
     font-weight: bold;
+    padding-left: 1rem;
 }
 
 .search-bar-btn i {
@@ -197,24 +202,30 @@ header img {
     color: white;
 }
 
+.research {
+    font-size: medium;
+}
+
 /****** filter bar & info ******/
 .filter-container {
     display: flex;
     justify-content: flex-start;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .filter-parts {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1.2rem;
 }
 
 .filter-title {
-    padding-top: 0.7rem;
+    padding-top: 0.9rem;
 
 }
 
@@ -232,11 +243,10 @@ header img {
     background-color: #DEEBFF;
 }
 
-
-.fa-solid {
-    margin-right: 0.62rem;
-    font-size: 1rem;
+.filter-text {
+    padding-left: 0.5rem;
 }
+
 
 .info-bar {
     display: flex;
@@ -254,9 +264,11 @@ header img {
     border-radius: 50%;
     border: 0.06rem solid var(--filter-bg-color);
     margin-top: 0.7rem;
-
 }
 
+.text-info {
+    padding-left: 0.5rem;
+}
 
 /****** accomodations and popular ***********/
 .accomodations-and-popular {
@@ -275,9 +287,7 @@ header img {
 /****** accomodations ***********/
 
 /* Bon courage Tracy :) */
-.section-title {
-    padding-bottom: 0.5rem;
-}
+
 
 .accomodations {
     width: 65%;
@@ -286,11 +296,23 @@ header img {
 .accomodations-cards {
     flex: 1 1 0px;
     display: flex;
-    
     flex-wrap: wrap;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     gap: 2rem;
+}
+
+.accomodations-cards h3 {
+    margin-top: 2px;
+}
+
+.accomodations-title {
+    margin-bottom: 20px;
+}
+
+.accomodations-title2 {
+
+    margin-top: 20px;
 }
 
 .accomodations-cards a {
@@ -310,10 +332,11 @@ header img {
     font-size: 7rem;
 }
 
-.accomodations-title2 {
-   
-
+.accomodations-cards .card-content {
+    padding-left: 0.6rem;
 }
+
+
 
 /****** Popular ***********/
 .populaires {
@@ -399,6 +422,7 @@ header img {
 
 .activities h3 {
     height: 40px;
+    padding-left: 1.5rem;
 }
 
 .activities .card-link {
@@ -430,10 +454,6 @@ footer ul {
     gap: 1rem;
 }
 
-
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -443,6 +463,27 @@ footer ul {
     /****** header ***********/
     header {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        font-size: x-large;
+        gap: 12rem;
+        border-bottom: 0.2rem solid var(--main-bg-color);
+
+    }
+
+    .navbar-item {
+        padding-bottom: 0.8rem;
+        text-align: center;
+
+    }
+
+    .navbar-item:hover {
+        border-top: 0.2rem solid #FFF;
+        border-bottom: 0.2rem solid var(--main-color);
     }
 
     /****** filters ***********/
@@ -485,5 +526,6 @@ footer ul {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* ... */
 }
