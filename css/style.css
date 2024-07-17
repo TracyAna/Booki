@@ -13,6 +13,10 @@ body {
     padding: 0 3rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -353,11 +357,13 @@ header img {
 .accomodations-cards-column1 {
     display: flex;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .accomodations-cards-column2 {
     display: flex;
     gap: 1.5rem;
+    width: 100%;
 }
 
 /****** Popular ***********/
@@ -440,7 +446,7 @@ header img {
 
 
 .activities h3 {
-    height: 40px;
+    height: 30px;
     padding-left: 1.5rem;
 }
 
@@ -498,7 +504,7 @@ footer ul {
 
     /****** search bar ******/
 
-    .search-bar  {
+    .search-bar {
         padding-bottom: 0;
     }
 
@@ -530,11 +536,7 @@ footer ul {
         width: 100%;
     }
 
-    .accomodations-cards {}
-
-    .hebergements {
-        width: 100%;
-    }
+    .accomodations-cards a {}
 
     .accomodations-cards-column1 {
         display: flex;
@@ -558,12 +560,15 @@ footer ul {
         margin-top: 0;
     }
 
+    .popular-cards img {}
+
     .popular-cards a {
         width: 33%;
     }
 
     .popular-cards .card {
-        margin-top: 10px;
+        margin-top: 1.5rem;
+        height: 146px;
     }
 
     .popular-cards .card-title {
@@ -575,7 +580,23 @@ footer ul {
     }
 
     /****** activities ******/
-    .activities-parts {}
+
+    .activities {
+        padding-left: 1.2rem;
+    }
+
+    .activities img {
+        height: 15rem;
+    }
+
+    .activities h3 {
+        height: 40px;
+        padding-left: 0.8rem;
+    }
+
+    .activities .card {
+        width: 9rem;
+    }
 
 
     /****** accomodations ***********/
@@ -661,6 +682,14 @@ footer ul {
 
     }
 
+    .filter-column1 {
+        margin-bottom: 0;
+    }
+
+    .filter-column2 {
+        margin-top: 0;
+    }
+
     .filter-parts {
         font-size: 0.9rem;
     }
@@ -674,10 +703,10 @@ footer ul {
 
     }
 
-    /****** filters ***********/
+    /****** info ***********/
 
     .text-info {
-        font-size: large;
+        font-size: medium;
     }
 
     .info-bar {
@@ -702,6 +731,16 @@ footer ul {
     }
 
     .accomodations-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accomodations-cards-column1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accomodations-cards-column2 {
         display: flex;
         flex-direction: column;
     }
@@ -735,27 +774,44 @@ footer ul {
     }
 
     /****** activities ******/
+
+    .activities {
+        padding-right: 0;
+    }
+
     .activities-parts {
         display: flex;
         flex-direction: column;
         gap: 0.3rem;
     }
 
+    .activities .card {
+        width: 20rem;
+    }
+
     .activities img {
-        height: 150px;
+        height: 200px;
         width: 100%;
     }
 
     .activities .activities-cards {}
 
     /****** footer ***********/
+
     footer {
         flex-direction: column;
     }
 
     footer section {
         width: 100%;
+    }
 
+    .footer-title {
+        margin-bottom: 0;
+    }
+
+    .footer ul {
+        margin-bottom: 0;
     }
 
     /* ... */
