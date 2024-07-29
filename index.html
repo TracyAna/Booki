@@ -35,22 +35,24 @@
                 </h1>
                 <p class="subtitle">En plein centre-ville ou en pleine nature</p>
             </div>
+            
+            <div class="form-settings">
+                <form class="search-bar" action="#" method="get">
+                    <fieldset>
+                        <label for="research">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label>
 
-            <form class="search-bar" action="#" method="get">
-                <fieldset>
-                    <label for="research">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </label>
+                        <input type="search" name="research" id="research" class="search-bar-txt"
+                            placeholder="Marseille, France">
 
-                    <input type="search" name="research" id="research" class="search-bar-txt"
-                        placeholder="Marseille, France">
-
-                    <button type="submit" class="search-bar-txt search-bar-btn">
-                        <span class="research">Rechercher</span>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </fieldset>
-            </form>
+                        <button type="submit" class="search-bar-txt search-bar-btn">
+                            <span class="research">Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
 
             <section class="filter-container">
                 <h2 class="filter-title">Filtres</h2>
@@ -221,7 +223,7 @@
                     </div>
                     <div class="accomodations-title2">
                         <a href="#">
-                            <h2 class="section-title">Afficher plus</h2>
+                            <h2 class="section-subtitle">Afficher plus</h2>
                         </a>
                     </div>
                 </section>
