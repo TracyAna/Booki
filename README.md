@@ -10,3 +10,4 @@ Installer un environnement de développement front-end
 Versionner son projet avec Git et Github
 
 Voir le projet: https://github.com/TracyAna/Booki.git
+                https://tracyana.github.io/Booki/
