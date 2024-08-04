@@ -682,6 +682,10 @@ footer ul {
         margin: 0;
     }
 
+    .search-bar input {
+        width: 70vw;
+    }
+
     .search-bar-txt span {
         display: none;
     }
