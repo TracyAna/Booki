@@ -708,7 +708,7 @@ footer ul {
     .filter-container {
         flex-direction: column;
         justify-content: center;
-        padding: 0 1rem;
+        padding: 0 0.6rem;
     }
 
     .filter-column1 {
@@ -728,7 +728,7 @@ footer ul {
     }
 
     .filter-bar-contour {
-        width: 44vw;
+        width: 45vw;
     }
 
     .filter-title {
