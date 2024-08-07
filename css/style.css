@@ -486,6 +486,11 @@ footer ul {
     gap: 1rem;
 }
 
+footer nav {
+    width: 100%;
+    display: flex;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -603,6 +608,7 @@ footer ul {
 
     .activities {
         padding-left: 1.2rem;
+        padding-right: 0;
     }
 
     .activities img {
@@ -614,14 +620,17 @@ footer ul {
     }
 
     .activities h3 {
-        height: 40px;
-        padding-left: 0.8rem;
+        padding-left: 0.6rem;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
     }
 
-    .activities .card {
-        width: 9.5rem;
+    .activities-cards .card-txt {
+        height: 68px;
     }
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -813,7 +822,7 @@ footer ul {
     .activities-parts {
         display: flex;
         flex-direction: column;
-        gap: 0.3rem;
+        gap: 0.9rem;
     }
 
     .activities .card {
@@ -822,6 +831,10 @@ footer ul {
 
     .activities-title {
         padding-top: 1rem;
+    }
+
+    .activities h3 {
+        padding-left: 1.2rem;
     }
 
     /****** footer ***********/
@@ -840,6 +853,10 @@ footer ul {
 
     .footer ul {
         margin-bottom: 0;
+    }
+
+    footer nav {
+        flex-direction: column;
     }
 
 }
