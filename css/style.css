@@ -453,8 +453,11 @@ header img {
 }
 
 .activities h3 {
-    height: 30px;
-    padding-left: 1.5rem;
+    height: 59px;
+    padding-left: 1.3rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .activities .card-link {
@@ -464,20 +467,12 @@ header img {
 /****** footer ***********/
 
 footer {
-    display: flex;
     background-color: var(--main-bg-color);
     margin: 3rem 0rem 0 0rem;
 }
 
-footer section {
-    padding: 1.2rem 0 1.2rem 1.2rem;
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 3);
-}
-
 .footer-title {
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
 footer ul {
@@ -487,8 +482,12 @@ footer ul {
 }
 
 footer nav {
-    width: 100%;
     display: flex;
+}
+
+.footer-navbar {
+    width: 447px;
+    padding: 11px 0 0 24px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -621,10 +620,7 @@ footer nav {
 
     .activities h3 {
         padding-left: 0.6rem;
-        margin: 0;
         height: 100%;
-        display: flex;
-        align-items: center;
         font-size: 15px;
     }
 
@@ -839,14 +835,6 @@ footer nav {
 
     /****** footer ***********/
 
-    footer {
-        flex-direction: column;
-    }
-
-    footer section {
-        width: 100%;
-    }
-
     .footer-title {
         margin-bottom: 0;
     }
@@ -857,6 +845,11 @@ footer nav {
 
     footer nav {
         flex-direction: column;
+    }
+
+    .footer-navbar {
+        width: 320px;
+        padding: 24px 0 0 24px;
     }
 
 }
