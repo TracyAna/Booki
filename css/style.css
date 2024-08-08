@@ -548,6 +548,10 @@ footer nav {
         width: 20vw;
     }
 
+    .filter-text {
+        font-size: 15px;
+    }
+
     /****** accomodations ***********/
 
     .accomodations img {
@@ -651,8 +655,7 @@ footer nav {
 
     .headline {
         font-size: 0.8rem;
-        padding-left: 1rem;
-        align-content: space-around;
+        padding-left: 0.8rem;
         width: 100%;
     }
 
